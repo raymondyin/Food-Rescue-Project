@@ -1,9 +1,15 @@
-Food-Rescue-Project
-===================
+Food Hero
+=========
 
-A project of Food Rescue for Food report and pickup system facilitating mobile devices
+##Project Summary
+This is an ongoing non-profit project aiming to help prevent individuals and organizations from wasting excessive food by utilizing food donation programs from food banks through mobile platform and techonologies.
 
-Project Structure
------------------
+##The Platform
 
-Android device ---> Server <--- iOS device
+1. Client-side (front-end)
+  * Android application
+  * iOS application
+
+2. Server-side (back-end)
+  * Ruby on Rails framework
+
