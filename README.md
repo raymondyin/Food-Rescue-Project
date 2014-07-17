@@ -13,3 +13,4 @@ This is an ongoing non-profit project aiming to help prevent individuals and org
 2. Server-side (back-end)
   * Ruby on Rails framework
 
+![Alt text](https://github.com/raymondyin/FoodHeroProject/blob/master/Image/illustration.png?raw=true "Illustration for iOS-server relation")
