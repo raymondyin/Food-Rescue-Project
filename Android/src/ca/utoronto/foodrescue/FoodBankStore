@@ -1,0 +1,28 @@
+public class FoodBankStore{
+private static final LatLng CHAN = new LatLng(33.455,-112.0668);
+…
+private static final StoreLocation[] ALLRESTURANTLOCATIONS = new StoreLocation[] {
+        new StoreLocation(new LatLng(33.455,-112.0668), new String("North York Harvest Food Bank")),
+        new StoreLocation(new LatLng(33.5123,-111.9336), new String("Ontario Association of Food Banks")),
+        new StoreLocation(new LatLng(33.3333,-111.8335), new String("Community Share Food Bank The")),
+        new StoreLocation(new LatLng(33.4296,-111.9436), new String("Example")),
+        new StoreLocation(new LatLng(33.4152,-111.8315), new String("FB EX")),
+        new StoreLocation(new LatLng(33.3525,-111.7896), new String("FB EX2"))
+};
+
+      @Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.geolocation_view);
+		
+		mMap = ((MapFragment) getFragmentManager().findFragmentById(R.id.storelocationmap)).getMap();
+		mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(CHANDLER, ZOOM_LEVEL));
+		Drawable iconDrawable = getResources().getDrawable(R.drawable.ic_launcher);
+		Bitmap iconBmp = ((BitmapDrawable) iconDrawable).getBitmap();
+		for(int ix = 0; ix < ALLRESTURANTLOCATIONS.length; ix++) {
+			mMap.addMarker(new MarkerOptions()
+			    .position(ALLRESTURANTLOCATIONS[ix].mLatLng)
+		        .icon(BitmapDescriptorFactory.fromBitmap(iconBmp)));
+		}
+		
+		}
