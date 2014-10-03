@@ -14,7 +14,7 @@ private static final StoreLocation[] ALLRESTURANTLOCATIONS = new StoreLocation[]
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.geolocation_view);
-		
+		 // creation Index
 		mMap = ((MapFragment) getFragmentManager().findFragmentById(R.id.storelocationmap)).getMap();
 		mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(CHANDLER, ZOOM_LEVEL));
 		Drawable iconDrawable = getResources().getDrawable(R.drawable.ic_launcher);
