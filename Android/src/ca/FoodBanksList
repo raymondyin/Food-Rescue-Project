@@ -51,3 +51,4 @@ public class Contact {
 		this._phone_number = phone_number;
 	}
 }
+// connect to Database
