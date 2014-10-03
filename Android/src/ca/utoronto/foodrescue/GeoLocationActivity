@@ -4,7 +4,7 @@ public class GeolocationActivity extends Activity implements
     private LocationClient mLocationClient;
     
     
-
+// make more exact
     static class StoreLocation {
         public LatLng mLatLng;
         public String mId;
@@ -38,7 +38,7 @@ public class GeolocationActivity extends Activity implements
 
         // All Location Services sample apps use this category
         mIntentFilter.addCategory(CATEGORY_LOCATION_SERVICES);
-
+// create GeoFence Marker
 		createGeofences();
 
 		mRegisterGeofenceButton = (Button)findViewById(R.id.geofence_switch);
@@ -120,6 +120,7 @@ public class GeolocationActivity extends Activity implements
         }
         
     }
+    // add a marker editor 
 
     public void unregisterGeofences() {
 
